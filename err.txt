@@ -1,0 +1,22 @@
+WARNING: FITSFixedWarning: RADECSYS= 'ICRS ' / International Celestial Ref. System 
+the RADECSYS keyword is deprecated, use RADESYSa. [astropy.wcs.wcs]
+WARNING: FITSFixedWarning: 'datfix' made the change 'Changed '21/03/99' to '1999-03-21''. [astropy.wcs.wcs]
+WARNING: FITSFixedWarning: 'datfix' made the change 'Changed '22/09/98' to '1998-09-22''. [astropy.wcs.wcs]
+WARNING: FITSFixedWarning: 'datfix' made the change 'Changed '22/03/99' to '1999-03-22''. [astropy.wcs.wcs]
+WARNING: FITSFixedWarning: 'datfix' made the change 'Changed '20/03/99' to '1999-03-20''. [astropy.wcs.wcs]
+WARNING: FITSFixedWarning: 'datfix' made the change 'Changed '23/11/98' to '1998-11-23''. [astropy.wcs.wcs]
+WARNING: FITSFixedWarning: 'datfix' made the change 'Changed '17/11/98' to '1998-11-17''. [astropy.wcs.wcs]
+Traceback (most recent call last):
+  File "fetch_sdss_xy.py", line 548, in <module>
+    if __name__ == "__main__":
+  File "fetch_sdss_xy.py", line 483, in run_online_mode
+    print("got reference list")
+  File "fetch_sdss_xy.py", line 121, in align_images
+    frame_path, registered_path,
+  File "/usr/local/lib/python3.4/dist-packages/montage_wrapper/wrappers.py", line 350, in reproject
+    header_hdr, hdu=hdu)
+  File "/usr/local/lib/python3.4/dist-packages/montage_wrapper/wrappers.py", line 213, in mProject_auto
+    m.mProjectPP(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/montage_wrapper/commands.py", line 1737, in mProjectPP
+    stderr = p.stderr.read()
+KeyboardInterrupt
